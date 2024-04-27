@@ -67,17 +67,7 @@ public class FollowMouse : MonoBehaviour
         {
             rb.velocity *= Mathf.Clamp01(1f - slowdownRate * Time.deltaTime);
             Debug.Log(transform.rotation);
-            float horizontalInput = Input.GetAxis("Horizontal");
-
-            if (horizontalInput < 0)
-            {
-                Debug.Log("inputleft");
-                rb.AddRelativeForce(Vector2.right * leftForce, ForceMode2D.Impulse);
-            }
-            else if (horizontalInput > 0)
-            {
-                rb.AddRelativeForce(Vector2.left * leftForce, ForceMode2D.Impulse);
-            }
+            
             //if (Input.GetMouseButtonDown(0))
             //{
                 //Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
