@@ -13,8 +13,8 @@ public class FollowMouse : MonoBehaviour
     public float speed;
     public float moveSpeed = 5f;
 
-    public float scaleIncreaseAmount = 1f;
-    public float lerpSpeed = 1.0f;
+    public float scaleIncreaseAmount = 3f;
+    public float lerpSpeed = 0.1f;
     public float maxScale = 10.0f;
 
     private Vector3 targetScale;
@@ -30,7 +30,7 @@ public class FollowMouse : MonoBehaviour
 
     public void Getdirty()
     {
-        targetScale += new Vector3(scaleIncreaseAmount, scaleIncreaseAmount, scaleIncreaseAmount);
+        targetScale += new Vector3(scaleIncreaseAmount * 10, scaleIncreaseAmount * 10, scaleIncreaseAmount * 10);
 
         targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
     }
@@ -48,6 +48,7 @@ public class FollowMouse : MonoBehaviour
 
             rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
         }
+        //Debug.Log(targetScale);
         if (touchingdirty ==  true)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed);
@@ -59,8 +60,8 @@ public class FollowMouse : MonoBehaviour
     void FixedUpdate()
     {
         float speed = rb.velocity.magnitude;
-        Debug.Log(speed);
-        Debug.Log(exceeds);
+        //Debug.Log(speed);
+        //Debug.Log(exceeds);
         if (speed > 7)
         {
             exceeds = true;
