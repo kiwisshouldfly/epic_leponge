@@ -10,10 +10,11 @@ public class PlayerShoot : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        sponge.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,9 +23,12 @@ public class PlayerShoot : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && sponge_shoot == false)
         {
             Debug.Log("Fire!");
-            Instantiate(sponge, sponge_spawn.position, sponge_spawn.rotation);
+            //Instantiate(sponge, sponge_spawn.position, sponge_spawn.rotation);
+            sponge.SetActive(true);
             sponge_shoot = true;
-        }    
+            
+        }
+        
     }
 
    
