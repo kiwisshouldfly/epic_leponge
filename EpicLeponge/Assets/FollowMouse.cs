@@ -11,52 +11,63 @@ public class FollowMouse : MonoBehaviour
     public bool exceeds = false;
     public Rigidbody2D rb;
     public float speed;
-   
+    public float moveSpeed = 5f;
+
+    public float scaleIncreaseAmount = 1f;
+    public float lerpSpeed = 1.0f;
+    public float maxScale = 10.0f;
+
+    private Vector3 targetScale;
+    public bool touchingdirty = false;
+
+    
+
     void Start()
     {
-        previousPosition = transform.position;
-        //previousTime = Time.time;
+        targetScale = transform.localScale;
+        
     }
 
+    public void Getdirty()
+    {
+        targetScale += new Vector3(scaleIncreaseAmount, scaleIncreaseAmount, scaleIncreaseAmount);
+
+        targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
+    }
+
+ 
     // Update is called once per frame
     void Update()
     {
-        speed = Vector3.Distance(transform.position, previousPosition) / Time.deltaTime;
-        previousPosition = transform.position;
-        //previousPosition = transform.position;
-       // Vector3 currentPosition = transform.position;
-       // float currentTime = Time.time;
-
-       // Vector3 displacement = currentPosition - previousPosition;
-        
-        Vector3 mousePosition = Input.mousePosition;
-
-        Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        worldMousePosition.z = 0f;
-
-        //Vector3 displacement = worldMousePosition - previousPosition;
-
-       // float timeInterval = Time.time - previousTime;
-
-       // Vector3 velocity = displacement / timeInterval;
-
-        //previousPosition = worldMousePosition;
-        //previousTime = Time.time;
-
-        transform.position = worldMousePosition;
-
-        if (speed > 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (speed > 200)
-            {
-                exceeds = true;
-            }
-            else
-            {
-                exceeds = false;
-            }
-            Debug.Log(speed);
+            Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            clickPosition.z = 0f;
+
+            Vector2 moveDirection = (clickPosition - transform.position).normalized;
+
+            rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
+        }
+        if (touchingdirty ==  true)
+        {
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed);
+        }
+
+       
+    }
+
+    void FixedUpdate()
+    {
+        float speed = rb.velocity.magnitude;
+        Debug.Log(speed);
+        Debug.Log(exceeds);
+        if (speed > 7)
+        {
+            exceeds = true;
+        }
+        else
+        {
+            exceeds = false;
         }
     }
 }
