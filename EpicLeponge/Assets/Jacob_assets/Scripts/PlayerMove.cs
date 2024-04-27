@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public float rotationSpeed = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +15,10 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Input.mousePosition);
-        //Vector2 mousePosition = Input.mousePosition;
-        //transform.LookAt(mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+
+        transform.up = direction;
     }
 }

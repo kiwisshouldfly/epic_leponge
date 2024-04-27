@@ -17,7 +17,6 @@ public class Sponge_camera_move : MonoBehaviour
     {
         HandleCameraMovement();
         
-
     }
 
 
@@ -25,6 +24,6 @@ public class Sponge_camera_move : MonoBehaviour
     {
         Vector3 newPosition = new Vector3(sponge_position.position.x, sponge_position.position.y, 0) + offset;
         transform.position = newPosition;
-        Debug.Log(sponge_position.position);
+        //Debug.Log(sponge_position.position);
     }
 }

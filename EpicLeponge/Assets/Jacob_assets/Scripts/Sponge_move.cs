@@ -6,25 +6,31 @@ public class Sponge_move : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed = 10.0f;
-    public GameObject cam_manager;
     //private Camera_manager = cam_manager.GetComponent<>
     private GameObject camera_manager;
     public Camera_manager manager;
-    // Start is called before the first frame update
+    public Rigidbody2D rbSponge;
+    public Rigidbody2D rbRotation;
+
+
+    public PlayerShoot findIfSpongeActive;
     void Awake()
     {
+        Vector3 newPosition = new Vector3(rbSponge.position.x, rbSponge.position.y, 0);
+        transform.position = newPosition;
+        transform.rotation = Quaternion.Euler(0f, 0f, rbSponge.rotation);
+
+        Vector2 direction = transform.up;
+
         rb = GetComponent<Rigidbody2D>();
-        rb.AddRelativeForce(Vector2.up * speed, ForceMode2D.Impulse);
-
-        //camera_manager = GameObject.Find("Camera_Manager");
+        rb.AddRelativeForce(direction * speed, ForceMode2D.Impulse);
         manager.SwitchToNewCamera();
-
-
 }
 
     // Update is called once per frame
     void Update()
     {
         
+        Debug.Log(transform.rotation);
     }
 }
