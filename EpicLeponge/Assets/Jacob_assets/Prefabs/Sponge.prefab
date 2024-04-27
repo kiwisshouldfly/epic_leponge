@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 563732595740072311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06228201}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8001468579660060307}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a577dcb062dddac44b4acbb79e12b7fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5445055093378008453}
   - component: {fileID: 7153100121500458055}
   - component: {fileID: 6263681415486041116}
+  - component: {fileID: 1232197048717035905}
   m_Layer: 0
   m_Name: Sponge
   m_TagString: Untagged
@@ -154,7 +155,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5445055093378008453}
   speed: 10
-  cam_manager: {fileID: 0}
+  manager: {fileID: 0}
+  rbSponge: {fileID: 0}
+  rbRotation: {fileID: 0}
+  slowdownRate: 0.5
+  moveSpeed: 5
+  findIfSpongeActive: {fileID: 0}
 --- !u!58 &6263681415486041116
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,3 +177,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1232197048717035905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420347623439514481}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3ec741c9ec14541844f2d034c05874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
+  exceeds: 0
+  rb: {fileID: 5445055093378008453}
+  speed: 0
+  moveSpeed: 5
+  scaleIncreaseAmount: 3
+  lerpSpeed: 0.1
+  maxScale: 10
+  touchingdirty: 0

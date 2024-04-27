@@ -12,6 +12,7 @@ public class Sponge_move : MonoBehaviour
     public Rigidbody2D rbSponge;
     public Rigidbody2D rbRotation;
     public float slowdownRate = 0.5f;
+    public float moveSpeed = 5f;
 
 
     public PlayerShoot findIfSpongeActive;
@@ -33,5 +34,17 @@ public class Sponge_move : MonoBehaviour
     {
         rb.velocity *= Mathf.Clamp01(1f - slowdownRate * Time.deltaTime);
         Debug.Log(transform.rotation);
+
+        //if (Input.GetMouseButtonDown(0))
+        //{
+         //   Debug.Log("pls");
+         //   Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+          //  clickPosition.z = 0f;
+
+          //  Vector2 moveDirection = (clickPosition - transform.position).normalized;
+
+          //  rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
+        //}
+
     }
 }

@@ -12,6 +12,7 @@ public class FollowMouse : MonoBehaviour
     public Rigidbody2D rb;
     public float speed;
     public float moveSpeed = 5f;
+    public Camera_manager manager;
 
     public float scaleIncreaseAmount = 3f;
     public float lerpSpeed = 0.1f;
@@ -19,13 +20,23 @@ public class FollowMouse : MonoBehaviour
 
     private Vector3 targetScale;
     public bool touchingdirty = false;
+    public SpriteRenderer spriteRenderer;
+    public bool isShot = false;
 
-    
+    // variables for rotating upon shooting
+    public Rigidbody2D playerspawnrot;
+    public float slowdownRate = 0.5f;
+
+    //variables for left + right movement when shooting
+    public float leftForce = -0.1f;
+    public float rightForce = 0.1f;
+    public float burstDuration = 0.2f;
+   
 
     void Start()
     {
         targetScale = transform.localScale;
-        
+        spriteRenderer.enabled = false;
     }
 
     public void Getdirty()
@@ -35,24 +46,61 @@ public class FollowMouse : MonoBehaviour
         targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
     }
 
+    public void shotout()
+    {
+        Vector3 newPosition = new Vector3(playerspawnrot.position.x, playerspawnrot.position.y, 0);
+        transform.position = newPosition;
+        transform.rotation = Quaternion.Euler(0f, 0f, playerspawnrot.rotation);
+        Vector2 direction = transform.up;
+
+        isShot = true;
+        spriteRenderer.enabled = true;
+        rb.AddRelativeForce(direction * speed, ForceMode2D.Impulse);
+        manager.SwitchToNewCamera();
+    }
+
  
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isShot == true)
         {
-            Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            clickPosition.z = 0f;
+            rb.velocity *= Mathf.Clamp01(1f - slowdownRate * Time.deltaTime);
+            Debug.Log(transform.rotation);
+            float horizontalInput = Input.GetAxis("Horizontal");
 
-            Vector2 moveDirection = (clickPosition - transform.position).normalized;
+            if (horizontalInput < 0)
+            {
+                Debug.Log("inputleft");
+                rb.AddRelativeForce(Vector2.right * leftForce, ForceMode2D.Impulse);
+            }
+            else if (horizontalInput > 0)
+            {
+                rb.AddRelativeForce(Vector2.left * leftForce, ForceMode2D.Impulse);
+            }
+            //if (Input.GetMouseButtonDown(0))
+            //{
+                //Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //clickPosition.z = 0f;
 
-            rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
+                //Vector2 moveDirection = (clickPosition - transform.position).normalized;
+
+                //rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
+            //}
+            //Debug.Log(targetScale);
+            if (touchingdirty == true)
+            {
+                transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed);
+            }
         }
-        //Debug.Log(targetScale);
-        if (touchingdirty ==  true)
-        {
-            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed);
-        }
+
+      //  IEnumerator ApplyForce(Vector2 force)
+      //  {
+            //Apply the force
+    //        rb.AddForce(force, ForceMode2D.Force);
+     //       yield return new WaitForSeconds(burstDuration);
+      //      rb.velocity = new Vector2(moveSpeed, rb.velocity.x);
+     //   }
 
        
     }
