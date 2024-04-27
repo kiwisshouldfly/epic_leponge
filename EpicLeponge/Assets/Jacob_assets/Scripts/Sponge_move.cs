@@ -11,6 +11,7 @@ public class Sponge_move : MonoBehaviour
     public Camera_manager manager;
     public Rigidbody2D rbSponge;
     public Rigidbody2D rbRotation;
+    public float slowdownRate = 0.5f;
 
 
     public PlayerShoot findIfSpongeActive;
@@ -30,7 +31,7 @@ public class Sponge_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        rb.velocity *= Mathf.Clamp01(1f - slowdownRate * Time.deltaTime);
         Debug.Log(transform.rotation);
     }
 }
