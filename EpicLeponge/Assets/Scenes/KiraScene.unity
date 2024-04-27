@@ -695,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
       propertyPath: canBeShattered
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
