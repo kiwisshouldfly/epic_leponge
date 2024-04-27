@@ -28,15 +28,6 @@ public class Explodable : MonoBehaviour
     /// <summary>
     /// Creates fragments if necessary and destroys original gameobject
     /// </summary>
-    /// 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("explode!");
-            explode();
-        }
-    }
     public void explode()
     {
         //if fragments were not created before runtime then create them now

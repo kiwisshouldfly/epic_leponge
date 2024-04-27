@@ -3,12 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shatterable : MonoBehaviour
+   
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform test;
+    public Explodable explodable;
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Sponge"))
+        {
+  
+           if (collision.gameObject.GetComponent<FollowMouse>().exceeds == true)
+            {
+                Debug.Log("blah");
+                explodable.explode();
+            }
+            
+        }
     }
+
 
     // Update is called once per frame
     void Update()
@@ -17,7 +30,9 @@ public class Shatterable : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("pressed!");
+            explodable.explode();
         }
 
+   
     }
 }
