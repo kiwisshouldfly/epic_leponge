@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
-public class MainMenurest : MonoBehaviour
+public class MainMenuTake : MonoBehaviour
 {
     // Start is called before the first frame update
     public VideoPlayer videoPlayer;
@@ -10,6 +12,7 @@ public class MainMenurest : MonoBehaviour
     private bool VideoFinished = false;
     public GameObject startButton;
     public GameObject quitButton;
+    public GameObject controlButton;
 
     void Start()
     {
@@ -17,6 +20,7 @@ public class MainMenurest : MonoBehaviour
         videoPlayer.loopPointReached += OnVideoFinished;
         startButton.SetActive(false);
         quitButton.SetActive(false);
+        controlButton.SetActive(false);
 
     }
     public void GoToScene(string sceneName)
@@ -37,5 +41,6 @@ public class MainMenurest : MonoBehaviour
         VideoFinished = true;
         startButton.SetActive(true);
         quitButton.SetActive(true);
+        controlButton.SetActive(true);
     }
 }

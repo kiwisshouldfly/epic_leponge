@@ -15,7 +15,7 @@ public class Shatterable : MonoBehaviour
     private bool meetsThreshold = false;
     public bool canBeShattered = false;
     private bool hasShattered = false;
-
+    public bool hasCleaned = false;
     //public float massthreshold = 1.0f;
 
     //audio variables
@@ -37,6 +37,7 @@ public class Shatterable : MonoBehaviour
         Debug.Log("colliding!");
         if (collision.gameObject.CompareTag("Sponge"))
         {
+            hasCleaned = true;
             Vector3 collidingObjectScale = collision.transform.localScale;
             spriteRenderer.sprite = cleansprite;
 

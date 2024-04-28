@@ -63,7 +63,7 @@ public class FollowMouse : MonoBehaviour
 
     public void Getdirty()
     {
-        targetScale += new Vector3(scaleIncreaseAmount * 10, scaleIncreaseAmount * 10, scaleIncreaseAmount * 10);
+        targetScale += new Vector3(scaleIncreaseAmount * 5, scaleIncreaseAmount * 5, scaleIncreaseAmount * 5);
 
         //targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
     }
