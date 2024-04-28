@@ -25,7 +25,7 @@ public class FollowMouse : MonoBehaviour
     private Vector3 startPos;
     public float multiplier;
 
-
+    
     // variables for rotating upon shooting
     public Rigidbody2D playerspawnrot;
     public float slowdownRate = 0.5f;

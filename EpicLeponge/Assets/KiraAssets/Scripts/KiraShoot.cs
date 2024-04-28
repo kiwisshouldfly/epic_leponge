@@ -11,6 +11,11 @@ public class KiraShoot : MonoBehaviour
     private bool isMouseButtonPressed = false;
     public float maxMultiplier = 4f;
     public float minMultiplier = 1f;
+    public AudioClip shootSound;
+    public AudioSource audioSource;
+    public Sprite[] chargingUp;
+    public SpriteRenderer arrowRenderer;
+    private int currentIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +31,14 @@ public class KiraShoot : MonoBehaviour
         {
             shoot_multiplier = 1f;
             InvokeRepeating("AddMultiplier", 0, 1);
+            currentIndex = 0;
 
 
         }
         else if (Input.GetButtonUp("Fire1") && sponge_shoot == false)
         {
-            Debug.Log("released");
+            arrowRenderer.sprite = chargingUp[0];
+            
             isMouseButtonPressed = false;
             CancelInvoke();
             sponge_shoot = true;
@@ -39,21 +46,38 @@ public class KiraShoot : MonoBehaviour
             sponge.GetComponent<FollowMouse>().shotout();
             shoot_multiplier = 1f;
             print(shoot_multiplier);
-        }
-        
-       // if (Input.GetButtonDown("Fire1") && sponge_shoot == false)
-      //  {
-     //       Debug.Log("fire!");
+            audioSource.Play();
 
-     //       sponge_shoot = true;
-     //       sponge.GetComponent<FollowMouse>().shotout();
-     //   }
-        
+        }
+        //else if (Input.GetButtonUp("Fire1") && sponge_shoot == false)
+        // {
+        //    Debug.Log("released");
+        //     isMouseButtonPressed = false;
+        //     CancelInvoke();
+        //     sponge_shoot = true;
+        //      sponge.GetComponent<FollowMouse>().multiplier = shoot_multiplier;
+        //     sponge.GetComponent<FollowMouse>().shotout();
+        //     shoot_multiplier = 1f;
+        //      print(shoot_multiplier);
+        //      audioSource.PlayOneShot(shootSound);
+        //  }
+
+        // if (Input.GetButtonDown("Fire1") && sponge_shoot == false)
+        //  {
+        //       Debug.Log("fire!");
+
+        //       sponge_shoot = true;
+        //       sponge.GetComponent<FollowMouse>().shotout();
+        //   }
+
     }
 
     void AddMultiplier()
     {
-        shoot_multiplier += 0.5f;
+        shoot_multiplier += 1f;
+        currentIndex++;
+        currentIndex = Mathf.Clamp(currentIndex, 0, chargingUp.Length - 1);
+        arrowRenderer.sprite = chargingUp[currentIndex];
         shoot_multiplier = Mathf.Clamp(shoot_multiplier, minMultiplier, maxMultiplier);
         Debug.Log(shoot_multiplier);
     }
