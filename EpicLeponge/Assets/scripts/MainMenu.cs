@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     private bool VideoFinished = false;
     public GameObject startButton;
     public GameObject quitButton;
+    public GameObject options;
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class MainMenu : MonoBehaviour
         videoPlayer.loopPointReached += OnVideoFinished;
         startButton.SetActive(false);
         quitButton.SetActive(false);
-
+        options.SetActive(false);
     }
     public void GoToScene(string sceneName)
     {
@@ -36,5 +37,6 @@ public class MainMenu : MonoBehaviour
         VideoFinished = true;
         startButton.SetActive(true);
         quitButton.SetActive(true);
+        options.SetActive(true);
     }
 }
