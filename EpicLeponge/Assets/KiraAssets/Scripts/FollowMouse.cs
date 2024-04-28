@@ -23,6 +23,7 @@ public class FollowMouse : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public bool isShot = false;
     private Vector3 startPos;
+    public float multiplier;
 
 
     // variables for rotating upon shooting
@@ -32,6 +33,9 @@ public class FollowMouse : MonoBehaviour
     //resetting shooting
     public KiraShoot player;
     public float cooldown = 0.5f;
+
+    //adding force when shooting
+    public float shootforce = 1f;
 
     void Start()
     {
@@ -51,6 +55,7 @@ public class FollowMouse : MonoBehaviour
        // transform.position = transform;
         transform.rotation = Quaternion.Euler(0f, 0f, 1f);
         transform.position = startPos;
+
 
     }
 
@@ -72,7 +77,7 @@ public class FollowMouse : MonoBehaviour
 
         isShot = true;
         spriteRenderer.enabled = true;
-        rb.AddRelativeForce(direction * speed, ForceMode2D.Impulse);
+        rb.AddRelativeForce(direction * speed * multiplier, ForceMode2D.Impulse);
         manager.SwitchToNewCamera();
     }
 
