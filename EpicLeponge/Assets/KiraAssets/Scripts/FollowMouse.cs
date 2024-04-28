@@ -25,6 +25,8 @@ public class FollowMouse : MonoBehaviour
     private Vector3 startPos;
     public float multiplier;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     
     // variables for rotating upon shooting
     public Rigidbody2D playerspawnrot;
@@ -109,6 +111,11 @@ public class FollowMouse : MonoBehaviour
        
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("splat!");
+        audioSource.Play();
+    }
     void FixedUpdate()
     {
         float speed = rb.velocity.magnitude;
