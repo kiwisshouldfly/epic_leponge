@@ -1122,15 +1122,14 @@ MonoBehaviour:
   manager: {fileID: 34068688}
   scaleIncreaseAmount: 0.1
   lerpSpeed: 1
-  maxScale: 10
+  maxScale: 0.7
   touchingdirty: 0
   spriteRenderer: {fileID: 1851069998}
   isShot: 0
   playerspawnrot: {fileID: 1544122698}
   slowdownRate: 0.5
-  leftForce: -10
-  rightForce: 10
-  burstDuration: 0.5
+  player: {fileID: 2130887958}
+  cooldown: 1
 --- !u!50 &1851069996
 Rigidbody2D:
   serializedVersion: 4
@@ -1248,7 +1247,6 @@ GameObject:
   - component: {fileID: 2130887953}
   - component: {fileID: 2130887952}
   - component: {fileID: 2130887956}
-  - component: {fileID: 2130887957}
   - component: {fileID: 2130887958}
   m_Layer: 0
   m_Name: PlaceholderGun
@@ -1285,7 +1283,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130887951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1385,20 +1383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
---- !u!114 &2130887957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130887951}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc2cd5fc5a25294b916a478f8b76769, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sponge: {fileID: 1851069994}
-  sponge_shoot: 0
 --- !u!114 &2130887958
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class KiraShoot : MonoBehaviour
         {
             Debug.Log("fire!");
 
-            //sponge_shoot = true;
+            sponge_shoot = true;
             sponge.GetComponent<FollowMouse>().shotout();
         }
         

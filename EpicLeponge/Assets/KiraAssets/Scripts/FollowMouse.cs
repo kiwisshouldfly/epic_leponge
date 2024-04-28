@@ -22,29 +22,45 @@ public class FollowMouse : MonoBehaviour
     public bool touchingdirty = false;
     public SpriteRenderer spriteRenderer;
     public bool isShot = false;
+    private Vector3 startPos;
+
 
     // variables for rotating upon shooting
     public Rigidbody2D playerspawnrot;
     public float slowdownRate = 0.5f;
 
-    //variables for left + right movement when shooting
-    public float leftForce = -0.1f;
-    public float rightForce = 0.1f;
-    public float burstDuration = 0.2f;
-   
+    //resetting shooting
+    public KiraShoot player;
+    public float cooldown = 0.5f;
 
     void Start()
     {
         targetScale = transform.localScale;
         spriteRenderer.enabled = false;
+        //setting start position
+        startPos = transform.localPosition;
+        //targetRot = transform.localRotation;
+
+    }
+
+    void resetPos()
+    {
+        spriteRenderer.enabled = false;
+       // transform.rotation = Quaternion.Euler(0f, 0f, playerspawnrot.rotation);
+        //Vector3 newPosition = new Vector3(playerspawnrot.position.x, playerspawnrot.position.y, 0);
+       // transform.position = transform;
+        transform.rotation = Quaternion.Euler(0f, 0f, 1f);
+        transform.position = startPos;
+
     }
 
     public void Getdirty()
     {
         targetScale += new Vector3(scaleIncreaseAmount * 10, scaleIncreaseAmount * 10, scaleIncreaseAmount * 10);
 
-        targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
+        //targetScale = Vector3.Min(targetScale, new Vector3(maxScale, maxScale, maxScale));
     }
+
 
     public void shotout()
     {
@@ -52,6 +68,7 @@ public class FollowMouse : MonoBehaviour
         transform.position = newPosition;
         transform.rotation = Quaternion.Euler(0f, 0f, playerspawnrot.rotation);
         Vector2 direction = transform.up;
+        Debug.Log(transform.rotation);
 
         isShot = true;
         spriteRenderer.enabled = true;
@@ -66,32 +83,24 @@ public class FollowMouse : MonoBehaviour
         if (isShot == true)
         {
             rb.velocity *= Mathf.Clamp01(1f - slowdownRate * Time.deltaTime);
-            Debug.Log(transform.rotation);
+          
+            Debug.Log(rb.velocity);
             
-            //if (Input.GetMouseButtonDown(0))
-            //{
-                //Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                //clickPosition.z = 0f;
+            if ((rb.velocity.x < cooldown && rb.velocity.x > -cooldown) && (rb.velocity.y < cooldown && rb.velocity.y > -cooldown))
+            {
+                //Debug.Log("yippe!");
+                isShot = false;
+                manager.SwitchToNewCamera();
+                player.sponge_shoot = false;
+                resetPos();
+            }
 
-                //Vector2 moveDirection = (clickPosition - transform.position).normalized;
 
-                //rb.AddForce(moveDirection * moveSpeed, ForceMode2D.Impulse);
-            //}
-            //Debug.Log(targetScale);
             if (touchingdirty == true)
             {
                 transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed);
             }
         }
-
-      //  IEnumerator ApplyForce(Vector2 force)
-      //  {
-            //Apply the force
-    //        rb.AddForce(force, ForceMode2D.Force);
-     //       yield return new WaitForSeconds(burstDuration);
-      //      rb.velocity = new Vector2(moveSpeed, rb.velocity.x);
-     //   }
-
        
     }
 
