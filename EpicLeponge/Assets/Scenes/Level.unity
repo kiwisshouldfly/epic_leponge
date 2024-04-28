@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7386156549183289786, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7386156549183289789, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
       propertyPath: m_Name
       value: WashingMachine
@@ -337,6 +341,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5473015041625955633, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955634, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5473015041625955637, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
@@ -574,6 +582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4517200313382372848, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4517200313382372851, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -700,6 +712,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090450, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -769,6 +785,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090450, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -886,6 +906,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245503, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
 --- !u!1001 &1205174691
@@ -952,6 +976,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090450, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1161,6 +1189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955634, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5473015041625955637, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
       propertyPath: m_Name
       value: CabnetEnd
@@ -1318,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 298798134036708814, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
 --- !u!1001 &1515306155
@@ -1373,6 +1409,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656448632806245500, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245503, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1892,6 +1932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CabnetFront (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036420, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9059931057017036423, guid: c41b22508c629d442b8280c6b397943e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2181,6 +2225,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3513444108133346795, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3513444108133346796, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
       propertyPath: m_Name
       value: Oven
@@ -2334,6 +2382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8495825316407643914, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8495825316407643917, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
       propertyPath: m_Name
       value: Table
@@ -2350,6 +2402,10 @@ PrefabInstance:
     - target: {fileID: 9059931057017036419, guid: c41b22508c629d442b8280c6b397943e, type: 3}
       propertyPath: m_Name
       value: CabnetFront
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036420, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9059931057017036423, guid: c41b22508c629d442b8280c6b397943e, type: 3}
       propertyPath: m_RootOrder
@@ -2416,6 +2472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090450, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2600,6 +2660,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656448632806245500, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245503, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

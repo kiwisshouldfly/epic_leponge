@@ -28,7 +28,7 @@ public class KiraShoot : MonoBehaviour
     {
 
         // Debug.Log(isMouseButtonPressed);
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && sponge_shoot == false)
         {
             shoot_multiplier = 1f;
             InvokeRepeating("AddMultiplier", 0, 1);
