@@ -295,6 +295,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.z
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
 --- !u!4 &23517682 stripped
@@ -586,6 +602,22 @@ PrefabInstance:
     - target: {fileID: 666796066287160869, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 666796066287160894, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
+      propertyPath: massThreshold.z
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6341567bb82d4d468ade0f8c0d55260, type: 3}
@@ -1081,6 +1113,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -1162,6 +1210,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.z
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8656448632806245496, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
       propertyPath: m_Name
       value: Stool (4)
@@ -1394,6 +1458,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -1471,6 +1551,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.z
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8656448632806245496, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
       propertyPath: m_Name
       value: Stool (2)
@@ -1540,6 +1636,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5473015041625955633, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1841,6 +1953,22 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812734655901789274, guid: c0649af47ad600d41994af6a1d8d99e6, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812734655901789274, guid: c0649af47ad600d41994af6a1d8d99e6, type: 3}
+      propertyPath: massThreshold.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812734655901789274, guid: c0649af47ad600d41994af6a1d8d99e6, type: 3}
+      propertyPath: massThreshold.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812734655901789274, guid: c0649af47ad600d41994af6a1d8d99e6, type: 3}
+      propertyPath: massThreshold.z
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0649af47ad600d41994af6a1d8d99e6, type: 3}
 --- !u!1 &628567981
@@ -1908,6 +2036,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 4517200313382372844, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
+      propertyPath: massThreshold.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517200313382372844, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
+      propertyPath: massThreshold.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517200313382372844, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
+      propertyPath: massThreshold.z
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4517200313382372848, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -1926,7 +2066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517200313382372851, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.596256
+      value: 5.56
       objectReference: {fileID: 0}
     - target: {fileID: 4517200313382372851, guid: 89789a37b581f2d4e99ae7d92596e61a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1987,6 +2127,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 7386156549183289766, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
+      propertyPath: massThreshold.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386156549183289766, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
+      propertyPath: massThreshold.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386156549183289766, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
+      propertyPath: massThreshold.z
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7386156549183289785, guid: 3cc68fcc78ff0b24cb53ec9d27c31093, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2132,6 +2284,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41b22508c629d442b8280c6b397943e, type: 3}
 --- !u!1 &743885205 stripped
@@ -2214,6 +2382,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656448632806245475, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
+      propertyPath: massThreshold.z
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8656448632806245496, guid: f3d8bc8719c594143bf59c38f6de5cf9, type: 3}
       propertyPath: m_Name
       value: Stool (3)
@@ -2831,6 +3015,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -3198,6 +3398,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 4279321149718075496, guid: 3fa20ba3836af3f409770eb418d6a2df, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279321149718075496, guid: 3fa20ba3836af3f409770eb418d6a2df, type: 3}
+      propertyPath: massThreshold.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279321149718075496, guid: 3fa20ba3836af3f409770eb418d6a2df, type: 3}
+      propertyPath: massThreshold.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279321149718075496, guid: 3fa20ba3836af3f409770eb418d6a2df, type: 3}
+      propertyPath: massThreshold.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4279321149718075507, guid: 3fa20ba3836af3f409770eb418d6a2df, type: 3}
       propertyPath: m_Name
       value: Lamp
@@ -3404,6 +3620,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table
       objectReference: {fileID: 0}
+    - target: {fileID: 8495825316407643926, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495825316407643926, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495825316407643926, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 799465b3a49a7f4469ebfbc42672c35e, type: 3}
 --- !u!4 &1443157200 stripped
@@ -3504,6 +3732,18 @@ PrefabInstance:
     - target: {fileID: 3513444108133346796, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513444108133346807, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
+      propertyPath: massThreshold.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513444108133346807, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
+      propertyPath: massThreshold.y
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513444108133346807, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
+      propertyPath: massThreshold.z
+      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a359205f7bc5a94eb49ace17e5176b4, type: 3}
@@ -3647,6 +3887,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473015041625955630, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5473015041625955633, guid: 14b3ad25074f1f544959273b6e9afba6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3934,6 +4190,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1085127679}
     m_Modifications:
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022976964584090445, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9022976964584090449, guid: e17c32e2de5617145a2a93308daf6be1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -4199,6 +4471,22 @@ PrefabInstance:
     - target: {fileID: 298798134036708814, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
       propertyPath: m_GravityScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 298798134036708818, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298798134036708818, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
+      propertyPath: massThreshold.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 298798134036708818, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
+      propertyPath: massThreshold.y
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 298798134036708818, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
+      propertyPath: massThreshold.z
+      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763172fc7eb14184aaa2ff08fe2ffd63, type: 3}
@@ -4491,6 +4779,22 @@ PrefabInstance:
     - target: {fileID: 9059931057017036423, guid: c41b22508c629d442b8280c6b397943e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: canBeShattered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059931057017036440, guid: c41b22508c629d442b8280c6b397943e, type: 3}
+      propertyPath: massThreshold.z
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41b22508c629d442b8280c6b397943e, type: 3}

@@ -48,7 +48,7 @@ public class Shatterable : MonoBehaviour
                 collidingObjectScale.z > massThreshold.z)
                 {
                     meetsThreshold = true;
-                    shatterEffect.Play();
+                    //shatterEffect.Play();
                     explodable.explode();
                     
                     hasShattered = true;
@@ -71,7 +71,7 @@ public class Shatterable : MonoBehaviour
 
                     Debug.Log("blah");
                     explodable.explode();
-                    shatterEffect.Play();
+                    //shatterEffect.Play();
                     hasShattered = true;
 
             }
