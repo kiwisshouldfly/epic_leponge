@@ -16,6 +16,7 @@ public class KiraShoot : MonoBehaviour
     public Sprite[] chargingUp;
     public SpriteRenderer arrowRenderer;
     private int currentIndex = 0;
+    public AudioClip chargeupSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,7 @@ public class KiraShoot : MonoBehaviour
             sponge.GetComponent<FollowMouse>().shotout();
             shoot_multiplier = 1f;
             print(shoot_multiplier);
+            audioSource.clip = shootSound;
             audioSource.Play();
 
         }
@@ -74,6 +76,11 @@ public class KiraShoot : MonoBehaviour
 
     void AddMultiplier()
     {
+        if (shoot_multiplier != maxMultiplier)
+        {
+            audioSource.clip = chargeupSound;
+            audioSource.Play();
+        }
         shoot_multiplier += 1f;
         currentIndex++;
         currentIndex = Mathf.Clamp(currentIndex, 0, chargingUp.Length - 1);
