@@ -24,10 +24,12 @@ public class KiraShoot : MonoBehaviour
         // Debug.Log(isMouseButtonPressed);
         if (Input.GetButtonDown("Fire1"))
         {
+            shoot_multiplier = 1f;
             InvokeRepeating("AddMultiplier", 0, 1);
 
+
         }
-        else if (Input.GetButtonUp("Fire1"))
+        else if (Input.GetButtonUp("Fire1") && sponge_shoot == false)
         {
             Debug.Log("released");
             isMouseButtonPressed = false;
@@ -36,6 +38,7 @@ public class KiraShoot : MonoBehaviour
             sponge.GetComponent<FollowMouse>().multiplier = shoot_multiplier;
             sponge.GetComponent<FollowMouse>().shotout();
             shoot_multiplier = 1f;
+            print(shoot_multiplier);
         }
         
        // if (Input.GetButtonDown("Fire1") && sponge_shoot == false)
